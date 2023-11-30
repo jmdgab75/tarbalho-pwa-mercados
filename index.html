@@ -7,14 +7,20 @@
     <title>Mercados</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="/images/icon-256_ios.png">
-    <link rel="icon" href="/images/camera_256.png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="/images/icon-256.png">
+    <link rel="icon" href="/images/icon-256.png" sizes="256x256" />
     <meta name="theme-color" content="white" />
     <script>navigator.serviceWorker.register("sw.js")</script> 
    
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+<form>
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" required>
+  <label for="localizacao">Localização:</label>
+  <input type="text" id="localizacao" name="localizacao" required>
+  <button type="submit">Cadastrar</button>
+  
+</form>
   </body>
 </html>

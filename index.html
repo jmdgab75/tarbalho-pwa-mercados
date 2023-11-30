@@ -11,16 +11,20 @@
     <link rel="icon" href="/images/icon-256.png" sizes="256x256" />
     <meta name="theme-color" content="white" />
     <script>navigator.serviceWorker.register("sw.js")</script> 
-   
   </head>
   <body>
+    <header class="header-fixed">
+      <div class="header-limiter">
+        <h1>Mercados</h1>
+      </div>
+    </header>
 <form>
   <label for="nome">Nome:</label>
   <input type="text" id="nome" name="nome" required>
   <label for="localizacao">Localização:</label>
   <input type="text" id="localizacao" name="localizacao" required>
   <button type="submit">Cadastrar</button>
-  
+  <button>Listar Mercados</button>
 </form>
   </body>
 </html>

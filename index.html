@@ -7,24 +7,29 @@
     <title>Mercados</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="manifest" href="manifest.json" />
+    <script src="js/main.js"></script>
+    <!-- <script type="module" src="js/banco.js"></script> -->
     <link rel="apple-touch-icon" href="/images/icon-256.png">
     <link rel="icon" href="/images/icon-256.png" sizes="256x256" />
     <meta name="theme-color" content="white" />
     <script>navigator.serviceWorker.register("sw.js")</script> 
   </head>
   <body>
-    <header class="header-fixed">
-      <div class="header-limiter">
-        <h1>Mercados</h1>
-      </div>
-    </header>
-<form>
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" name="nome" required>
-  <label for="localizacao">Localização:</label>
-  <input type="text" id="localizacao" name="localizacao" required>
-  <button type="submit">Cadastrar</button>
-  <button>Listar Mercados</button>
-</form>
+   
+  <h2>Cadastro de Supermercados</h2>
+
+  <form id="supermarketForm">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+
+    <label for="localizacao">Localização (Coordenada GPS):</label>
+    <input type="text" id="localizacao" placeholder="Ex: 40.7128,-74.0060" required>
+
+    <button type="button" onclick="cadastrarSupermercado()">Cadastrar</button>
+  </form>
+
+  <h2>Lista de Supermercados Cadastrados</h2>
+  <ul id="supermarketList"></ul>
+  <div id="map"></div>
   </body>
 </html>

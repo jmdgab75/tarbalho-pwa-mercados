@@ -56,3 +56,5 @@ function atualizarMapa() {
       console.error("Erro ao buscar mercado no banco de dados:", event.target.errorCode);
   };
 }
+
+

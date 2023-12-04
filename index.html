@@ -19,28 +19,30 @@
         <h1>Mercados</h1>
       </div>
     </header>
+    
+    
+    
+    
+    <div class="container">
+        <h1>Cadastro de Mercados</h1>
+        <form id="marketForm">
+            <label for="nome">Nome do Mercado:</label>
+            <input type="text" id="nome" name="nome" required>
 
-  <form id="supermarketForm">
-    <h3>Cadastro de mercados</h3>
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" required>
+            <label for="localizacao">Localização (Coordenada GPS):</label>
+            <input type="text" id="localizacao" name="localizacao" required>
 
-    <label for="localizacao">Localização (Coordenada GPS):</label>
-    <input type="text" id="localizacao" placeholder="Ex: 40.7128,-74.0060" required>
+            <button type="button" onclick="cadastrarMercado()">Cadastrar</button>
+        </form>
 
-    <button type="button" onclick="cadastrarSupermercado()">Cadastrar</button>
-  </form>
+        <div id="listaMercados">
+    
+        </div>
 
-  <div class="listagem">
-  <h3>Lista de mercados cadastrados</h3>
-  <ul id="supermarketList"></ul>
-  <div id="map"></div>
+        <div id="mapa"></div>
+    </div>
 
-  <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 590px; height: 400px;"></iframe><style>.mapouter{position:relative;height:300px;width:300px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style><a href="https://blooketjoin.org">blooket join</a><style>.gmap_canvas{overflow:hidden;height:300px;width:300px}.gmap_canvas iframe{position:relative;z-index:2}</style></div></div>
-
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API&callback=initMap" async defer></script> -->
-
-
-</div>
-  </body>
+    <script src="js/main.js"></script>
+    <script src="js/db.js"></script>
+</body>
 </html>

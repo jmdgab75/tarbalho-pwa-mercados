@@ -21,7 +21,7 @@
         "src": "images/icon-256.png",
         "sizes": "256x256",
         "type": "image/png",
-        "purpose": "any"
+        "purpose": "maskable "
     }
 ],
 "lang": "pt-BR",

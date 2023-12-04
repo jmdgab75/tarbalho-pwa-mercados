@@ -82,5 +82,6 @@ document.getElementById("supermarketForm").addEventListener("submit", (event) =>
   cadastrarSupermercado();
 });
 
+
 listarSupermercados();
 initializeMap();
